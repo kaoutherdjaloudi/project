@@ -1,0 +1,438 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* style pour nav */
+nav {
+    background-color: #b9b97b;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo-container img {
+    max-height: 50px;
+}
+
+.nav-elements ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.nav-elements a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    
+}
+
+nav a:hover {
+    color: #f0ead2;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #dde5b6;
+    margin-bottom: 100px;
+}
+.badge{
+    color: #fff;
+    padding: 5px;
+}
+/*style de la 1ere page*/
+.intro {
+    background-color: #fdf5ef;
+    margin-left: 40px;
+    margin-right: 55%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header img {
+    padding-right: 0px;
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.motivational-text {
+    flex: 1;
+    text-align: center;
+    color: #a8591c;
+    margin-top: 200px;
+}
+
+#decouvrir {
+    background-color: #cb997e;
+    color: #fff1e6;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* style pour les meilleurs vendus*/
+.best-sellers-container,
+.new-arrivals,
+.customer-reviews,
+footer {
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.best-sellers-container,
+.new-arrivals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+.product,
+.col-4 {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.product img,
+.col-4 img {
+    width: 100%;
+    height: auto;
+}
+
+.rating {
+    color: #f1dca7;
+}
+
+button {
+    background-color: #cb997e;
+    color: #fff1e6;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.title-container,
+.title {
+    text-align: center;
+    margin: 0;
+    background-color: #a8591c;
+    color: #fff;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 95px;
+    
+    
+}
+
+.col-4 {
+    margin-top: 25px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.col-4 img {
+    width: 180px;
+    height: 250px;
+}
+.col-4 p{
+    display: inline;
+}
+.new-arrivals {
+    padding: 15px;
+    background-color:#f0ead2;
+    margin-right: 64.4px;
+    margin-left: 64.4px;
+}
+
+.new {
+    text-align: center;
+    margin: 0;
+    background-color: #a8591c;
+    color: #fff;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 20px;
+}
+
+.new-arrivals .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+.new-arrivals .col-4 {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.new-arrivals .col-4 img {
+    width: 180px;
+    height: 250px;
+}
+
+.new-arrivals .col-4:last-child {
+    margin-right: 0; 
+}
+
+.new-arrivals button#voirPlus {
+    width: 120px; 
+    margin-left: 640px; 
+   
+}
+/* Style pour le bouton "Voir moins" */
+button#voirMoins {
+    display: none; 
+    width: 120px; 
+    margin-left: 640px; 
+    
+}
+
+.rating {
+    color: #f9c823;
+    font-size: 18px; 
+}
+
+.rating1 {
+    color: #f9c823;
+    font-size: 18px; 
+}
+
+
+.rating i,.rating1 i {
+    margin-right: 5px; /* Espace entre les étoiles */
+}
+.new-arrivals .rating {
+    color: #f1dca7; 
+}
+.new-arrivals .col-4.hidden {
+    display: none;
+}
+button#voirPlus {
+    background-color: #cb997e;
+    color: #fff1e6;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; 
+    margin-left: 40%;
+}
+
+/* Style pour le bouton "Voir moins" */
+button#voirMoins {
+    background-color: #cb997e;
+    color: #fff1e6;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+.col-4.hidden {
+    display: none;
+   
+}
+#voirMoins {
+    display: none;
+}
+  /* Styles pour la page d'inscription */
+  .inscription-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.inscription-container h2 {
+    margin-bottom: 20px;
+}
+
+#inscription-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#inscription-form .form-group {
+    margin-bottom: 20px;
+}
+
+#inscription-form label {
+    display: block;
+    font-weight: bold;
+}
+
+#inscription-form input[type="text"],
+#inscription-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#inscription-form button {
+    background-color: #cb997e;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#inscription-form button:hover {
+    background-color: #a8591c;
+}
+#avisForm {
+    display: none; 
+    margin-top: 20px; 
+}
+
+#avisForm label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+#avisForm input[type="text"],
+#avisForm textarea {
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#avisForm button {
+    background-color: #cb997e;
+    color: #fff1e6;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+
+}
+.customer-reviews{
+   margin-top: 35px;
+   background-color: #e2eede;
+  
+}
+.review{
+    background-color: #ebf4e2;
+    padding: 20px;
+    display: flex;
+}
+.avis{
+    margin: 30px;
+    list-style: none;
+}
+#ajouterAvisBtn{
+    margin-left: 500px;
+}
+h1 {
+    text-align: center;
+    color: #a8591c; 
+}
+
+#panier {
+    margin-bottom: 20px;
+}
+
+.produit {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.produit:last-child {
+    border-bottom: none;
+}
+
+.produit .nom {
+    font-weight: bold;
+}
+
+.produit .prix {
+    color: #cb997e;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #a8591c; 
+}
+/* Style pour le bouton "Ajouter au panier" */
+button.ajouter-panier {
+    background-color: #d4814e; /* Couleur de fond */
+    color: #fff1e6; /* Couleur du texte */
+    padding: 10px; /* Remplissage */
+    font-size: 14px; /* Taille de police */
+    border: none; /* Suppression de la bordure */
+    cursor: pointer; /* Curseur de la souris */
+    margin-top: 10px; /* Marge supérieure pour séparer du prix */
+    display: block; /* Affichage en bloc */
+    width: 58%; /* Largeur de 100% pour remplir le conteneur */
+}
+button.ajouter-panier1 {
+    background-color: #d4814e; /* Couleur de fond */
+    color: #fff1e6; /* Couleur du texte */
+    padding: 10px; /* Remplissage */
+    font-size: 14px; /* Taille de police */
+    border: none; /* Suppression de la bordure */
+    cursor: pointer; /* Curseur de la souris */
+    margin-top: 10px; /* Marge supérieure pour séparer du prix */
+    display: block; /* Affichage en bloc */
+    width: 50%; /* Largeur de 100% pour remplir le conteneur */
+}
+button.ajouter-panier2 {
+    background-color: #d4814e; /* Couleur de fond */
+    color: #fff1e6; /* Couleur du texte */
+    padding: 10px; /* Remplissage */
+    font-size: 14px; /* Taille de police */
+    border: none; /* Suppression de la bordure */
+    cursor: pointer; /* Curseur de la souris */
+    margin-top: 10px; /* Marge supérieure pour séparer du prix */
+    display: block; /* Affichage en bloc */
+    width: 50%; /* Largeur de 100% pour remplir le conteneur */
+}
+.add-to-cart {
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    margin-right: 10px;
+}
+/* Footer */
+footer {
+    background-color: #b9b97b; /* Couleur de fond */
+    color: #fff1e6; /* Couleur du texte */
+    padding: 20px; /* Remplissage */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Styling des icônes du footer */
+footer i.fa {
+    color: #fff1e6; /* Couleur blanche */
+    font-size: 30px; /* Taille des icônes */
+}
+
+

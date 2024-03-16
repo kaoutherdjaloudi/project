@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+   
+    <title>Bling</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <img src="../logo5.png" alt="Votre Logo">
+        </div>
+        <div class="nav-elements">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            <li>
+            <div class="panier-container">
+                <a href="panier.html" id="panier-icon"><i class="fa fa-shopping-cart"></i></a>
+                <span class="badge" id="nombre-articles-panier">0</span> 
+            </div></li></ul>
+        </div>
+    </nav>
+
+    <!-- Header avec image-->
+    <header class="container">
+        <img src="../plateaubij.jfif" alt="Accessoires pour femmes">
+        <div class="motivational-text">
+            <section class="intro">
+                <h1>Explorez notre collection exclusive</h1>
+                <p>Des accessoires élégants pour chaque occasion</p>
+                <button id="decouvrir" onclick="discoverNow()">Découvrir Maintenant</button>
+            </section>
+        </div>
+        
+    </header>
+    
+    
+            
+<div class="title-container" id="produits">
+        <h2 class="title">Best sallers</h2></div>
+    <section class="best-sellers container" >
+   
+        <div class="row">
+            <div class="col-4">
+                <img src="../bague1.jpg" alt="" />
+                <h4>Ensemble De 7 bagues</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1600</p><p>DA</p>
+                <button class="ajouter-panier" onclick="ajouterAuPanier('Ensemble De 7 bagues', '1600')">Ajouter au panier</button>
+
+            </div>
+
+            <div class="col-4">
+                <img src="../bagues2.jpg" alt="" />
+                <h4>Ensemble De 6 bagues</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1400</p><p>DA</p>
+                <button class="ajouter-panier" onclick="ajouterAuPanier('Ensemble De 6 bagues', 1400)">Ajouter au panier</button>
+
+            </div>
+
+            <div class="col-4">
+                <img src="../bouclefleur.jpg" alt="" />
+                <h4>Boucles d'oreilles fleurs blanches</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1800 DA</p>
+                <button class="ajouter-panier" onclick="ajouterAuPanier('Boucles d\'oreilles fleurs blanches', 1800)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../bouclefleur2.jpg" alt="" />
+                <h4>Boucles d'oreilles hortie  blanches</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1500 DA</p>
+                <button class="ajouter-panier" onclick="ajouterAuPanier('Boucles d\'oreilles hortie blanches', 1500)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../boucle.rouge1.jpg" alt="" />
+                <h4>Boucles d'oreilles <br> bordeaux</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1500 DA</p>
+                <button class="ajouter-panier" onclick="ajouterAuPanier('Boucles d\'oreilles bordeaux', 1500)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../bouclepap.jpg" alt="" />
+                <h4>Boucles d'oreilles <br> papillons </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1200 DA</p>
+                <button class="ajouter-panier" onclick="ajouterAuPanier('Boucles d\'oreilles papillons', 1200)">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>            
+
+    <!-- Les nouveaux articles -->
+    <div class="new"><h2>Nouveautés</h2></div>
+    <section class="new-arrivals">
+        
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="../Chaine3 (1).jpg" alt="" />
+                <h4>collier perles de culture</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1400 DA</p>
+                <button class="ajouter-panier1" onclick="ajouterAuPanier('collier perles de culture', 1400)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../Packchaine.jpg" alt="" />
+                <h4>pack 6 colliers</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3800 DA</p>
+                <button class="ajouter-panier1" onclick="ajouterAuPanier('pack 6 colliers', 3800)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../Gourm1.jpg" alt="" />
+                <h4>bracelet perles de culture</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1200 DA</p>
+                <button class="ajouter-panier1" onclick="ajouterAuPanier('bracelet perles de culture', 1200)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../Bague5.jpg" alt="" />
+                <h4>bague plume </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2400 DA</p>
+                <button class="ajouter-panier1" onclick="ajouterAuPanier('bague plume', 2400)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../Boucle5.jpg" alt="" />
+                <h4>Boucles d'oreilles dorées</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1200 DA</p>
+                <button class="ajouter-panier1" onclick="ajouterAuPanier('Boucles d\'oreilles dorées', 1200)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4">
+                <img src="../Bague4.jpg" alt="" />
+                <h4>bague plume </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1900 DA</p>
+                <button class="ajouter-panier1" onclick="ajouterAuPanier('bague plume', 1900)">Ajouter au panier</button>
+            </div>
+            <div class="col-4 hidden">
+                <img src="../parure1.jpg" alt="" />
+                <h4>Ensemble collier et Boucles d'oreilles plume </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2400 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Ensemble collier et Boucles d\'oreilles plume', 2400)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../packboucle5.jpg" alt="" />
+                <h4>Pack 4 boucles d'oreilles</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1700 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Pack 4 boucles d\'oreilles', 1700)">Ajouter au panier</button>
+            </div>
+                        
+            <div class="col-4 hidden">
+                <img src="../chainediam.jpg" alt="" />
+                <h4>Collier diamant </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3800 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Collier diamant', 3800)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../bouclelune.jpg" alt="" />
+                <h4>Boucles d'oreilles luna </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>4100 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Boucles d\'oreilles luna', 4100)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../pack7pieces.jpg" alt="" />
+                <h4>Pack 7 pièces</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3200 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Pack 7 pièces', 3200)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../pack2.jpg" alt="" />
+                <h4>Pack 5 pièces</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1800 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Pack 5 pièces', 1800)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../pack3chainescoeur.jpg" alt="" />
+                <h4>Pack 3 colliers cœur</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3200</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Pack 3 colliers cœur', 3200)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../bagues3ble.jpg" alt="" />
+                <h4>Bague </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1800 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Bague', 1800)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../chaine5pairles.jpg" alt="" />
+                <h4>Collier perles de culture </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1400 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Collier perles de culture', 1400)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../boucleplume.jpg" alt="" />
+                <h4>Boucles d'oreilles rose </h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>2400 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Boucles d\'oreilles rose', 2400)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../parurecoeur.jpg" alt="" />
+                <h4>Collier et Boucles d'oreilles cœurs</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3400 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Collier et Boucles d\'oreilles cœurs', 3400)">Ajouter au panier</button>
+            </div>
+            
+            <div class="col-4 hidden">
+                <img src="../parure2.jpg" alt="" />
+                <h4>Pack de 4 pièces perles de culture</h4>
+                <div class="rating1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>4400 DA</p>
+                <button class="ajouter-panier2" onclick="ajouterAuPanier('Pack de 4 pièces perles de culture', 4400)">Ajouter au panier</button>
+            </div>
+            
+
+            
+        </div>
+        <div> <button id="voirPlus" onclick="afficherPlus()">Voir plus</button>
+            <button id="voirMoins" onclick="cacherMoins()" class="hidden">Voir moins</button></div>
+    </section>
+<!-- Section Avis -->
+<section class="customer-reviews container">
+    <h2>Avis de nos clients</h2>
+    <div class="reviews-container" id="avis">
+        <!-- Commentaire 1 -->
+        <ul class="review">
+        <div class="avis"><li>
+            <strong>Yousra</strong>
+            <p>"Livraison rapide et efficace ! Mes articles sont arrivés en parfait état et dans les délais impartis. Je recommande vivement cette boutique en ligne."</p>
+        </li></div>
+        <!-- Commentaire 2 -->
+       <div  class="avis"> <li>
+            <strong>Yasmine</strong>
+             <p>"Excellent rapport qualité-prix ! Les prix sont très compétitifs et la qualité des produits est remarquable. Je suis une cliente fidèle depuis des années."</p>
+            </li></div>
+        <!-- Commentaire 3 -->
+        
+            <div class="avis"><li>
+        <strong>Nouha</strong>
+            <p>"Produits de haute qualité ! J'ai été agréablement surpris par la qualité des produits que j'ai reçus. Ils ont dépassé mes attentes."</p>
+        </li></div></ul>
+    </div>
+    <div>
+    <!-- Bouton Ajouter Avis -->
+    <button id="ajouterAvisBtn" onclick="afficherFormulaire()">Ajouter un avis</button></div>
+    <!-- Formulaire d'ajout d'avis  -->
+    <form id="avisForm" style="display: none;">
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" class="form-control" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="avis">Votre avis:</label>
+            <textarea class="form-control" id="avis" name="avis" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+</section>
+
+   
+    <!-- Pied de page -->
+    <footer>
+         <!-- Formulaire de contact -->
+    <div class="contact-form" id="contact">
+        <h3>Contactez-nous</h3>
+       <!-- Réseaux sociaux -->
+        <div class="social-icons">
+            <a href="lien_vers_instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="lien_vers_facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="lien_vers_tiktok" target="_blank"><i class="fa fa-tiktok"></i></a>
+            <a href="mailto:votre_email"><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        // Fonction pour mettre à jour le nombre d'articles dans l'icône du panier
+        function mettreAJourNombreArticles(nombre) {
+            document.querySelector('.badge').innerText = nombre;
+        }
+    </script>
+    
+    
+</body>
+</html>
